@@ -1,10 +1,23 @@
 import { Label } from "../ui/label";
 import { Button } from "../ui/button";
 import { Download } from "lucide-react";
+import AOS from "aos";
+import { useEffect } from "react";
 
 export default function AppSection() {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: true,
+    });
+  });
+
   return (
-    <div className="mt-10 w-5/6 bg-sky-200 mx-auto flex">
+    <div
+      className="mt-10 w-5/6 bg-sky-200 mx-auto flex"
+      data-aos="fade-right"
+      data-aos-anchor-placement="center-center"
+    >
       <img
         src="./assets/phone.png"
         alt="phone"

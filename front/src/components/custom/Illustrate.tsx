@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom";
 import { Label } from "../ui/label";
 
-interface IllustrateProps{
-  src:string,
+interface IllustrateProps {
+  src: string;
 }
-export default function Illustrate({src}:IllustrateProps) {
+export default function Illustrate({ src }: IllustrateProps) {
   return (
     <div className="mt-10 w-5/6 bg-black mx-auto flex">
       <img src={src} alt="" className="mx-auto w-[600px]" />

@@ -14,7 +14,7 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import { useNavigate } from "react-router-dom";
-import { Label } from "../ui/label";
+import { Label } from "../../ui/label";
 import { ChevronDown, ChevronUp } from "lucide-react";
 import { useState } from "react";
 

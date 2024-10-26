@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom";
-import { Label } from "../ui/label";
-interface TopProps{
-  src:string
+import { Label } from "../../ui/label";
+interface TopProps {
+  src: string;
 }
 
-export default function Top({src}:TopProps) {
+export default function Top({ src }: TopProps) {
   return (
     <div className="mt-10 w-5/6 bg-black mx-auto flex">
       <img src={src} className="ml-[200px] w-[300px]"></img>

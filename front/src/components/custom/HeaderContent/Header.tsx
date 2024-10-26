@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
-import { Input } from "../ui/input";
-import { Label } from "../ui/label";
+import { Input } from "../../ui/input";
+import { Label } from "../../ui/label";
 import { SignUpDrp } from "./signUpDrp";
 
 import { Package, ShoppingBag } from "lucide-react";
@@ -19,8 +19,11 @@ export default function Header() {
         <Link to="/Purchases" className="flex gap-2 mt-4">
           <Package></Package> Purchases
         </Link>
-        <Link to="/Shop">
+        <Link to="/Shop" className="flex">
           <ShoppingBag className="mt-4"></ShoppingBag>
+          <span className="absolute right-[105px] top-[90px] bg-red-500 text-white h-6 w-5 rounded-[30px] pl-1">
+            2
+          </span>
         </Link>
       </div>
     </div>

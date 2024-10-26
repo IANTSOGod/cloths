@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
-import { Label } from "../ui/label";
+import { Label } from "../../ui/label";
 
 export default function Pub() {
   const [flagUrl, setFlagUrl] = useState("");
